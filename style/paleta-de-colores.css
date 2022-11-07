@@ -1,0 +1,31 @@
+:root{
+    /* nav */
+    --color1:rgb(230, 244, 252);
+
+    /* botones */
+    --color2:rgb(40, 72, 198);
+    /* texto */
+    --color3:rgb(45, 77, 203);
+    /* Encabezados */
+    --color4:rgb(31, 62, 114);
+    /* ul */
+    --color5:rgb(109, 123, 147);
+    /* parrafo */
+    --color6:rgb(164, 173, 188);
+    /* text a  y body*/ 
+    --color7:rgb(255, 255, 255);
+    /* footer */
+    --color8:rgb(238, 243, 255);
+
+    --color9: rgb(255, 208, 18);
+
+    --color10:rgb(234, 241, 254);
+
+    --color11: #204473;
+    
+    --color12:#2c4cca;
+    
+    
+
+}
+

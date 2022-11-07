@@ -1,0 +1,423 @@
+/* TAMANO 768px */
+
+@media screen and (min-width:768px) {
+
+    .benefits-vaccine div{
+        width: 49%;
+    }
+
+section.emergency-contact .contact-inf .contact ul>div {
+    width: 48% !important;
+    margin: 5px;
+}
+
+section.emergency-contact .contact-inf .contact ul div .btn a {
+    font-size: 1.2rem !important;
+    width: 90% !important;
+}
+
+footer{
+    display: flex;
+}
+
+footer>div:first-child>div:not(.footer-col-1) div:nth-child(1),
+footer>div:first-child>div:not(.footer-col-1) div:nth-child(2){
+    width: 50% !important;
+
+}
+
+footer div.footer-col-2{
+    width: 40%;
+    margin-top: 100px;
+    flex-direction: column !important;
+    align-items: center !important;
+}
+
+footer div.footer-col-2 .terms div:first-child,
+footer div.footer-col-2 .terms div:nth-child(2) {
+    height: 40px;
+}
+
+}
+
+@media screen and (min-width:1024px) {
+    /* body{
+        background-color: red;
+    } */
+
+
+    #checkBTN {
+        display: none;
+    }
+
+nav label i{
+    display: none !important;
+}
+
+header{
+    margin-top: 10px;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 65px;
+}
+
+header h2{
+    max-width: 30%;
+}
+
+header nav{
+    display: flex !important;
+    max-width: 100%;
+    max-height: 65%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 !important;
+}
+
+header nav ul{
+    background-color: transparent !important;
+    display: flex !important;
+    z-index: 3;
+    display: flex;
+}
+
+ul li{
+    max-width: 140px;
+    margin: 0 20px 0 20px;
+    display: flex !important;
+}
+
+ul li a{
+    max-width: 130px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+header nav ul li:last-child a {
+    background-color: var(--color2);
+    color: var(--color7);
+    border-radius: 10px;
+}
+
+header nav:hover ul li:last-child a {
+    background-color: transparent;
+    color: var(--color5);
+}
+
+header nav ul li:last-child a:hover {
+    background-color: var(--color2);
+    color: var(--color7);
+    border-radius: 10px;
+}
+
+section.vaccines{
+    max-height: 900px !important;
+    height: 680px;
+
+}
+
+section.vaccines > div > div.col-1 {
+    flex-direction: row !important;
+    max-width: 100%;
+    max-height: 600px !important;
+    order: 1;
+}
+
+section.vaccines > div > div.col-1 h1{
+    max-width: 70%;
+    display: block;
+    font-size: 4rem;
+    font-weight: 700;
+    margin: 120px auto ;
+}
+
+section.vaccines > div > div.col-1 p.inf{
+    max-width: 70%;
+    margin: -80px auto;
+    margin-bottom: 20px;
+}
+
+section.vaccines > div > div.col-1 p:not(.inf){
+    max-width: 70%;
+    margin-left: 115px;
+}
+
+section.vaccines > div > div.col-1 p:not(.inf) i{
+    font-size: 20px;
+}
+
+section.vaccines > div > div.col-1 > div:nth-child(2) {
+    height: 650px !important;
+    order: 2 !important;
+}
+
+section.vaccines > div > div.col-1 > div.col-2 .doctor-1{
+    margin-top: 40px;
+    min-width: 550px;
+}
+
+section.vaccines > div:nth-child(2) .col-3 {
+    margin-top: -90px;
+    max-width: 85%;
+}
+
+section.vaccines > div:nth-child(2) .col-3 i{
+    margin-left: 80px;
+}
+
+section.vaccines > div:nth-child(2) .col-3 p{
+    margin-left: 20px;
+}
+
+
+section.vaccines > div:nth-child(2) .col-3 .container-item{
+    max-width: 85%;
+    opacity: .9;
+    margin-top: 5px;
+    padding: 10px 7px 10px 0px !important;
+}
+
+section .col-3 .container-item>div {
+    padding: 0 !important;
+}
+
+section.vaccines > div:nth-child(2) .col-3 .container-item p{
+    font-size: 1.2rem;
+}
+
+section .col-3 .container-item p.d-extra {
+    margin-left: 120px !important;
+    font-size: 1rem !important;
+}
+
+section.vacunas {
+    margin-top: 80px !important;
+}
+
+section.Why-vaccine {
+    margin-top: 100px !important;
+}
+
+section.Why-vaccine > h2 {
+    margin: 40px auto;
+    max-width: 91%;
+    font-size: 2.3rem !important;
+
+}
+
+section.Why-vaccine > p{
+    margin-left: 63px;
+    max-width: 40%;
+    font-weight: 400;
+    font-size: 1rem !important;
+}
+
+.benefits-vaccine {
+    margin: 50px auto !important;
+    max-width: 80%;
+}
+
+.benefits-vaccine div{
+    max-width: 24%;
+}
+
+.benefits-vaccine div p{
+    font-size: .9rem;
+}
+
+section.preparetions{
+    margin-top: 39px;
+    min-width: 100%;
+    min-height: 600px;
+    margin-top: 70px !important;
+}
+
+
+section.preparetions > .preparetions-img{
+    max-width: 50%;
+    margin-top: 140px;
+    min-height: 200px !important;
+    display: flex;
+    align-items: center;
+}
+
+section.preparetions .preparetions-img img {
+    min-width: 100%;
+}
+
+section.preparetions > .preparetions-inf{
+    max-width: 49%;
+}
+
+section.preparetions > .preparetions-inf .preparetions-inf-text{
+    margin-bottom: 20px;
+}
+
+section.preparetions > .preparetions-inf .preparetions-inf-text h2{
+    margin-top: 20px;
+    font-size: 2rem !important;
+    margin-bottom: 80px;
+    margin-left: 30px;
+}
+section.preparetions > .preparetions-inf .preparetions-inf-text p{
+    max-width: 75%;
+    font-size: 1rem !important;
+    margin-left: 30px;
+}
+
+section.preparetions .preparetions-inf .preparetions-options {
+    margin-left: 11px;
+    max-width: 70%;
+}
+
+section.preparetions .preparetions-inf .preparetions-options>div {
+    margin-bottom: 20px !important;
+    padding: 5px;
+}
+
+section.emergency-contact {
+    min-width: 100%;
+    margin-top: 100px !important;
+}
+
+section.emergency-contact .contact-inf {
+    max-width: 60%;
+    order: 1 !important;
+}
+
+section.emergency-contact .contact-inf h2 {
+    max-width: 73%;
+    margin: auto;
+    font-size: 2rem !important;
+}
+
+section.emergency-contact .contact-inf p{
+    max-width: 64%;
+    margin-left: 105px;
+}
+
+section.emergency-contact .contact-inf .contact ul  {
+    max-width: 80% !important;
+    margin-left: 100px;
+}
+
+section.emergency-contact .contact-inf .contact ul>div {
+max-width: 45%;
+margin: 10px;
+}
+
+section.emergency-contact .contact-inf .contact ul div .btn {
+    min-width: 100%;
+}
+
+section.emergency-contact .contact-inf .contact ul div .btn a {
+font-size: 1.2rem !important;
+margin-top: 10px;
+min-width: 100% !important;
+}
+
+section.emergency-contact .img-doctor {
+    max-width: 40%;
+}
+
+section.emergency-contact .img-doctor img {
+    min-width: 100%;
+}
+
+footer{
+    margin-top: 90px;
+    display: block;
+}
+
+footer div.footer-col-1{
+    max-width: 50% !important;
+}
+
+footer>div .footer-col-1 h2 {
+    text-align: left !important;
+    max-width: 55%;
+    margin: auto;
+    font-size: 1.5rem !important;
+    margin-top: 40px;
+}
+
+footer>div .footer-col-1 p{
+    max-width: 40%;
+    margin-left: 150px;
+    text-align: left !important;
+}
+
+footer>div:first-child>div:not(.footer-col-1) {
+    max-width: 50%;
+    margin-top: 40px !important;
+}
+
+footer>div:first-child>div:not(.footer-col-1) div:nth-child(1),
+footer>div:first-child>div:not(.footer-col-1) div:nth-child(2),
+footer>div:first-child>div:not(.footer-col-1) div:nth-child(3){
+    width: 33% !important;
+}
+
+footer>div:first-child>div:not(.footer-col-1) div:nth-child(2),
+footer>div:first-child>div:not(.footer-col-1) div:nth-child(3){
+    margin-top: -10px;
+}
+
+footer>div:first-child>div:not(.footer-col-1) a {
+    margin: 10px;
+    max-width: 70%;
+    text-align: left !important;
+}
+
+footer>div:first-child>div:not(.footer-col-1) >div:nth-child(1) a {
+    margin-left: 75px;
+}
+
+footer>div:first-child>div:not(.footer-col-1) >div:nth-child(2) a {
+    margin-left: 60px;
+}
+
+footer>div:first-child>div:not(.footer-col-1) >div:nth-child(3) a {
+    margin-left: 70px;
+}
+
+footer div.footer-col-2{
+    min-width: 100%;
+    flex-direction: row !important;
+    justify-content: space-around;
+    align-items: center !important;
+}
+
+footer div.footer-col-2 .copy{
+    max-width: 50%;
+    order: 1 !important;
+}
+
+footer div.footer-col-2 .copy p{
+    text-align: left !important;
+    margin-left: 60px;
+}
+
+footer div.footer-col-2 .terms {
+    max-width: 28%;
+    order: 2;
+}
+
+footer div.footer-col-2 .terms > div{
+    max-width: 50%;
+    flex-direction: row;
+
+}
+
+footer div.footer-col-2 .terms div:first-child,
+footer div.footer-col-2 .terms div:nth-child(2) {
+    height: auto !important ;
+}
+
+footer div.footer-col-2 .terms div:first-child a {
+    margin-top: 0 !important;
+}
+
+}

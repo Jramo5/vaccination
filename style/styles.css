@@ -1,0 +1,691 @@
+@import url(paleta-de-colores.css);
+@import url(media-query.css);
+
+@font-face {
+    font-family: "Touche";
+    src: url("//db.onlinewebfonts.com/t/9942ef689f75a1a10278a0eedd9517fa.eot");
+    src: url("//db.onlinewebfonts.com/t/9942ef689f75a1a10278a0eedd9517fa.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/9942ef689f75a1a10278a0eedd9517fa.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/9942ef689f75a1a10278a0eedd9517fa.woff") format("woff"), url("//db.onlinewebfonts.com/t/9942ef689f75a1a10278a0eedd9517fa.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/9942ef689f75a1a10278a0eedd9517fa.svg#Touche") format("svg");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Touche";
+}
+
+/* ESTILOS GENERALES */
+
+.i-style {
+    font-size: 1.4rem;
+    color: var(--color3);
+    background-color: var(--color10);
+    border-radius: 7px;
+    border-width: .4px;
+    border-style: solid;
+    border-color: var(--color5);
+    box-shadow: -2px 10px 22px 1px var(--color6);
+}
+
+.i-icon {
+    font-size: 1.4rem;
+    color: var(--color9);
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.a-style {
+    color: var(--color8);
+    background-color: var(--color2);
+    text-align: center;
+    text-decoration: none;
+}
+
+.a-boton {
+    background-color: var(--color8);
+    color: var(--color3);
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+/* FIN DE ESTILOS GENERALES */
+
+header {
+    margin-top: 10px;
+    width: 100%;
+    height: 45px;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 10%, rgba(204, 236, 255, 0.8239670868347339) 43%, rgba(255, 255, 255, 1) 90%);
+    z-index: 3;
+
+}
+
+#checkBTN {
+    display: none;
+}
+
+.btn-icon,
+.btn-icon i {
+    display: inline-block;
+    margin-top: -300px;
+    margin-left: 6px;
+    width: 25px;
+    font-size: 25px;
+}
+
+#checkBTN:checked~ul {
+    display: block;
+}
+
+
+header h2 {
+    color: var(--color3);
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    font-family: "Touche";
+}
+
+header nav {
+    margin-top: -25px;
+    width: 100%;
+    z-index: 3;
+}
+
+
+header nav ul {
+    margin-top: 5px;
+    width: 100%;
+    display: none;
+    background-color: var(--color7);
+}
+
+header nav ul li {
+    width: 100%;
+    list-style-type: none;
+}
+
+header nav ul li a {
+    display: block;
+    width: 130%;
+    height: 45px;
+    line-height: 45px;
+    color: var(--color5);
+    text-decoration: none;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+header nav ul li a:hover {
+    background-color: var(--color2);
+    color: var(--color7);
+}
+
+section.vaccines > div > div.col-1 {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* z-index: -1; */
+    /* overflow: hidden; */
+}
+
+section.vaccines .col-1 > div:first-child{
+    width: 100%;
+    height: 45%;
+    order: 2;
+    /* z-index: -1; */
+}
+
+section.vaccines .col-1 h1 {
+    margin-top: 10px;
+    padding-left: 10px;
+    font-size: 3.3rem;
+    color: var(--color4);
+}
+
+section.vaccines .col-1 p.inf {
+    margin-top: 20px;
+    font-size: 1.3rem;
+    padding: 10px;
+    width: 100%;
+    color: var(--color5);
+}
+
+section.vaccines .col-1 p:not(.inf) {
+    margin-top: 20px;
+    display: inline-block;
+    color: var(--color3);
+    font-size: 1.2rem;
+    margin-left: 10px;
+}
+
+section.vaccines .col-2 {
+    width: 100%;
+    height: 100%;
+    order: 1;
+    z-index: -2;
+}
+
+section.vaccines .col-2 .doctor-1 {
+    display: block;
+    margin: auto;
+    width: 340px;
+}
+
+section.vaccines .col-3 {
+    width: 100%;
+    height: 20%;
+    order: 3;
+}
+
+section.vaccines .col-3>p {
+    margin-top: 10px;
+    margin-left: 5px;
+    display: inline-block;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+
+}
+
+section.vaccines .col-3 i {
+    margin-left: 5px;
+    margin-left: 40px;
+    border-radius: 3px;
+    z-index: -1;
+    display: inline-block;
+}
+
+.icon {
+    font-size: 1.1rem;
+    text-align: center;
+    color: var(--color3);
+}
+
+section .col-3 .container-item {
+    width: 80%;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--color7);
+    border-radius: 7px;
+    box-shadow: -22px 21px 15px -16px var(--color5);
+}
+
+section .col-3 .container-item>div {
+    padding: 7px;
+}
+
+section .col-3 .container-item .icon {
+    margin-left: 0;
+}
+
+section .col-3 .container-item p {
+    display: inline-block;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-left: 5px;
+    color: var(--color5);
+}
+
+section .col-3 .container-item p.d-extra {
+    display: block;
+    margin-left: 40px;
+    font-size: .8rem;
+    font-weight: 600;
+    color: var(--color4);
+}
+
+section .col-3 .container-item div a {
+    font-size: 1.5rem;
+    display: inline-block;
+    width: 145px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 5px;
+}
+
+section.vacunas {
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    margin: 15px auto;
+}
+
+section.vacunas div>img {
+    display: block;
+    width: 230px;
+}
+
+section.vacunas .Sinovac img {
+    margin-top: 13px;
+}
+
+section.vacunas .Pfizer img {
+    height: 80px;
+}
+
+section.Why-vaccine {
+    width: 90%;
+    margin: auto;
+}
+
+section.Why-vaccine h2 {
+    font-size: 2rem;
+    color: var(--color4);
+}
+
+section.Why-vaccine p {
+    margin-top: 25px;
+    font-size: 1.2rem;
+    width: 90%;
+    color: var(--color5);
+}
+
+section.benefits-vaccine {
+    margin: 20px auto;
+    width: 90%;
+    justify-content: space-between;
+    z-index: 4;
+}
+
+.benefits-vaccine div {
+    width: 100%;
+    margin-bottom: 30px;
+    flex: none;
+    padding: 0px 0px 10px 20px;
+    box-shadow: 0px 3px 6px 2px var(--color6);
+}
+
+section.benefits-vaccine div h3 {
+    width: 70%;
+    color: var(--color4);
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+section.benefits-vaccine div p {
+    color: var(--color5);
+    font-weight: 500;
+    height: 125px;
+    padding-right: 8px;
+}
+
+.benefits-vaccine img {
+    width: 50px;
+    height: 55px;
+    line-height: 55px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 10px;
+}
+
+.benefits-vaccine i {
+    width: 50px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: block;
+}
+
+section.preparetions {
+    width: 90%;
+    margin: auto;
+}
+
+section.preparetions .preparetions-img img {
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
+section.preparetions .preparetions-inf {
+    margin-top: 20px;
+    padding: 5px;
+}
+
+section.preparetions .preparetions-inf .preparetions-inf-text h2 {
+    color: var(--color4);
+    font-size: 1.5rem;
+}
+
+section.preparetions .preparetions-inf .preparetions-inf-text p {
+    margin-top: 18px;
+    font-size: 1rem;
+    color: var(--color5);
+    font-weight: 500;
+}
+
+section.preparetions .preparetions-inf .preparetions-options {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+section.preparetions .preparetions-inf .preparetions-options>div {
+    margin-bottom: 10px;
+    background-color: var(--color7);
+    box-shadow: 0px 2px 3px 1px var(--color6);
+}
+
+section.preparetions .preparetions-inf .preparetions-options>div>div:not(.oculto) {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+section.preparetions .preparetions-inf .preparetions-options>div>div>label>i {
+    display: inline-block;
+    color: var(--color3);
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 7px;
+    text-align: center;
+    border-width: .4px;
+    border-style: solid;
+    border-color: var(--color5);
+
+}
+
+section.preparetions .preparetions-inf .preparetions-options>div>div label:nth-child(1) i {
+    margin-right: 10px;
+}
+
+section.preparetions .preparetions-inf .preparetions-options>div>div>label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--color4);
+}
+
+section.preparetions .preparetions-inf .preparetions-options>div>input[type="radio"],
+section.preparetions .preparetions-inf .preparetions-options>div>.oculto {
+    display: none;
+    padding: 10px;
+    color: var(--color5);
+    font-size: 1rem;
+    font-weight: 500;
+    margin-left: 30px;
+    background-color: var(--color7);
+
+}
+
+section.preparetions .preparetions-inf .preparetions-options>div>input[type="radio"]:checked~div.oculto {
+    display: block;
+    animation: caja 0.4s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+@keyframes caja {
+    0% {
+        transform: scaleY(0.4);
+        transform-origin: 100% 0%;
+    }
+
+    100% {
+        transform: scaleY(1);
+        transform-origin: 100% 0%;
+    }
+}
+
+section.preparetions .preparetions-inf .preparetions-options>div>input[type="radio"]:checked~div>label~label i {
+    rotate: 180deg;
+    color: var(--color5);
+    background-color: var(--color8);
+    transition: linear .4s;
+}
+
+section.emergency-contact {
+    width: 90%;
+    margin: auto;
+}
+
+section.emergency-contact .contact-inf {
+    width: 100%;
+    margin-top: 20px;
+    order: 2;
+    padding: 20px;
+}
+
+section.emergency-contact .contact-inf h2 {
+    color: var(--color4);
+    font-size: 1.4rem;
+}
+
+section.emergency-contact .contact-inf p {
+    margin-top: 15px;
+    color: var(--color5);
+    font-size: 1rem;
+}
+
+section.emergency-contact .contact-inf>.contact {
+    margin-top: 25px;
+}
+
+section.emergency-contact .contact-inf .contact ul {
+    width: 100%;
+    list-style-type: none;
+}
+
+section.emergency-contact .contact-inf .contact ul>div {
+    width: 100%;
+    margin-bottom: 15px;
+    border-width: .4px;
+    border-style: solid;
+    border-color: var(--color5);
+    box-shadow: -1px 1px 4px .6px var(--color6);
+    padding-top: 10px;
+}
+
+
+section.emergency-contact .contact-inf .contact ul>div>div {
+    display: flex;
+    margin: auto;
+    width: 90%;
+    padding: 10px;
+}
+
+section.emergency-contact .contact-inf .contact ul div div div:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 25%;
+}
+
+section.emergency-contact .contact-inf .contact ul div div div {
+    width: 100%;
+    min-height: 100%;
+}
+
+section.emergency-contact .contact-inf .contact ul div div i,
+section.emergency-contact .contact-inf .contact ul div div img {
+    font-size: 25px;
+    min-width: 50px;
+    height: 55px;
+    line-height: 55px;
+    border-radius: 7px;
+    border-width: .4px;
+    border-style: solid;
+    border-color: var(--color5);
+    box-shadow: -1px 1px 4px .6px var(--color6);
+}
+
+
+section.emergency-contact .contact-inf .contact ul div>div>div h3 {
+    margin: auto;
+    color: var(--color4);
+    font-weight: 500;
+    width: 80%;
+    display: block;
+}
+
+section.emergency-contact .contact-inf .contact ul div>div>div p {
+    width: 60%;
+    margin-top: 9px;
+    margin-left: 20px;
+    text-align: center;
+    font-size: .8rem;
+}
+
+
+section.emergency-contact .contact-inf .contact ul div .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.emergency-contact .contact-inf .contact ul div .btn li {
+    width: 100%;
+}
+
+section.emergency-contact .contact-inf .contact ul div .btn a {
+
+    font-size: 1rem;
+    text-decoration: none;
+    width: 65%;
+    font-weight: 500;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 4px;
+}
+
+section.emergency-contact .contact-inf .contact ul div .btn li a:hover {
+    background-color: var(--color2);
+    color: var(--color7);
+}
+
+section.emergency-contact .contact-inf .contact ul div:nth-child(2) .btn li a {
+    background-color: var(--color2);
+    color: var(--color7);
+}
+
+section.emergency-contact .contact-inf .contact ul:hover div:nth-child(2) .btn a {
+    background-color: var(--color8);
+    color: var(--color3);
+}
+
+section.emergency-contact .contact-inf .contact ul div:nth-child(2) .btn a:hover {
+    background-color: var(--color2);
+    color: var(--color7);
+    border-radius: 10px;
+}
+
+section.emergency-contact .img-doctor {
+    width: 100%;
+    order: 1;
+}
+
+section.emergency-contact .img-doctor img {
+    width: 90%;
+    margin: auto;
+    display: block;
+}
+
+footer {
+    background-color: var(--color1);
+    width: 100%;
+}
+
+footer>div {
+    width: 100%;
+    padding-top: 20px;
+}
+
+footer>div .footer-col-1 {
+    width: 100%;
+}
+
+footer>div .footer-col-1 h2 {
+    color: var(--color3);
+    font-size: 1.3rem;
+    padding-left: 10px;
+    text-align: center;
+}
+
+footer>div .footer-col-1 p {
+    margin-top: 20px;
+    color: var(--color5);
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 500;
+    padding-left: 10px;
+}
+
+footer>div:first-child>div:not(.footer-col-1) {
+    margin-top: 20px;
+    padding-left: 10px;
+    width: 100%;
+}
+
+footer>div:first-child>div:not(.footer-col-1) div:nth-child(1),
+footer>div:first-child>div:not(.footer-col-1) div:nth-child(2),
+footer>div:first-child>div:not(.footer-col-1) div:nth-child(3) {
+    width: 100%;
+
+}
+
+footer>div:first-child>div:not(.footer-col-1) h3 {
+    color: var(--color4);
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+footer>div:first-child>div:not(.footer-col-1) div:nth-child(2) h3,
+footer>div:first-child>div:not(.footer-col-1) div:nth-child(3) h3 {
+    margin-top: 10px;
+}
+
+footer>div:first-child>div:not(.footer-col-1) a {
+    display: block;
+    color: var(--color5);
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 0px 10px 0px;
+}
+
+footer div.footer-col-2 {
+    padding-bottom: 10px;
+}
+
+footer div.footer-col-2 .copy {
+    width: 100%;
+    order: 2;
+}
+
+footer div.footer-col-2 .copy p {
+    text-align: center;
+    font-size: 1rem;
+    color: var(--color5);
+}
+
+footer div.footer-col-2 .terms {
+    width: 100%;
+    order: 1;
+}
+
+footer div.footer-col-2 .terms div:first-child,
+footer div.footer-col-2 .terms div:nth-child(2) {
+    width: 100%;
+}
+
+footer div.footer-col-2 .terms div:first-child a {
+    margin-top: -10px;
+}
+
+footer div.footer-col-2 .terms div a {
+    display: block;
+    text-decoration: none;
+    color: var(--color5);
+    font-size: 1rem;
+    text-align: center;
+    padding: 10px;
+    
+}
